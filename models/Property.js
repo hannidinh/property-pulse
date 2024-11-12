@@ -1,4 +1,5 @@
-import { } from 'mongoose';
+import mongoose, { model, models } from 'mongoose';
+const Schema = mongoose.Schema;
 
 const PropertySchema = new Schema({
     owner: {
