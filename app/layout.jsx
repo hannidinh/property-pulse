@@ -9,15 +9,19 @@ export const metadata = {
 }
 
 const MainLayout = ({ children }) => {
-    return (<html>
-        <body>
-            <main>
-                <Navbar />
-                {children}
-                <Footer />
-            </main>
-        </body>
-    </html>);
+    return (
+        <AuthProvider>
+            <html>
+                <body>
+                    <main>
+                        <Navbar />
+                        {children}
+                        <Footer />
+                    </main>
+                </body>
+            </html>
+        </AuthProvider>
+    );
 }
 
 export default MainLayout;
