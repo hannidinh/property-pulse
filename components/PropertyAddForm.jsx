@@ -1,6 +1,9 @@
+'use client';
+import addProperty from "@/actions/addProperty";
+
 const PropertyAddForm = () => {
     return (
-        <form>
+        <form action={addProperty}>
             <h2 className="text-3xl text-center font-semibold mb-6">
                 Add Property
             </h2>
@@ -396,5 +399,6 @@ const PropertyAddForm = () => {
         </form>
     );
 }
+
 
 export default PropertyAddForm;
