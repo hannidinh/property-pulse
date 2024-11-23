@@ -4,6 +4,7 @@ import User from "@/models/User";
 import { getSessionUser } from "@/utils/getSessionUser";
 import { revalidatePath } from "next/cache";
 import mongoose from 'mongoose';
+
 async function bookmarkProperty(propertyId) {
     await connectDB();
     const sessionUser = await getSessionUser();
